@@ -176,3 +176,4 @@ cython_debug/
 # AI files
 .claude/
 context/
+design/
