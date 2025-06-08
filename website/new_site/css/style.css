@@ -63,7 +63,7 @@ a:hover {
 
 /* Layout Container */
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -72,27 +72,28 @@ a:hover {
 header {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
-}
-
-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
     flex: 0 0 auto;
+    width: 70px;
 }
 
 .logo img {
-    max-width: 70px;
+    width: 70px;
     height: auto;
+    display: block;
 }
 
 /* Navigation */
 nav.main-nav {
     flex: 1 1 auto;
     text-align: right;
+    padding-left: 20px;
 }
 
 nav.main-nav ul {
@@ -128,6 +129,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col {
@@ -185,7 +189,21 @@ main {
 
 /* Content Blocks */
 .content-section {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.content-section p {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+.content-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .spacer {
@@ -292,8 +310,8 @@ footer a {
 }
 
 .author-image img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -369,6 +387,12 @@ footer a {
 
 .book-section h2 {
     margin-bottom: 30px;
+}
+
+/* Homepage specific */
+.hero-image {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Centered content */
