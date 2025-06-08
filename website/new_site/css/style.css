@@ -1,0 +1,302 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "minion-pro", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "minion-pro", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Layout Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 75px;
+}
+
+/* Header */
+header {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Navigation */
+nav.main-nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav.main-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: none;
+}
+
+nav.main-nav a:hover,
+nav.main-nav .active a {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 60px 0;
+    min-height: 500px;
+}
+
+/* Grid System */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-8 {
+    width: 66.666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.666%;
+}
+
+/* Image Blocks */
+.image-block {
+    margin-bottom: 30px;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-link {
+    display: block;
+    text-decoration: none;
+}
+
+/* Content Blocks */
+.content-section {
+    margin-bottom: 60px;
+}
+
+.spacer {
+    height: 40px;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+/* Mobile Menu */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .col {
+        width: 100% !important;
+    }
+
+    nav.main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav.main-nav {
+        display: none;
+    }
+
+    nav.main-nav.active {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Author Grid */
+.author-item {
+    margin-bottom: 60px;
+}
+
+.author-image {
+    margin-bottom: 20px;
+}
+
+.author-content h3 {
+    margin-bottom: 15px;
+}
+
+/* Book Grid */
+.book-item {
+    margin-bottom: 60px;
+}
+
+.book-info {
+    padding: 20px 0;
+}
+
+.book-info p {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.book-info h3 {
+    margin: 20px 0;
+}
+
+/* Buy Button */
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.buy-button:hover {
+    opacity: 0.8;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Primary/Originals sections */
+.book-section {
+    margin-bottom: 80px;
+}
+
+.book-section h2 {
+    margin-bottom: 30px;
+}
+
+/* Centered content */
+.centered {
+    text-align: center;
+}
+
+/* About page specific */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
